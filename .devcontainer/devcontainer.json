@@ -1,0 +1,12 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Node.js Docker",
+  "dockerFile": "Dockerfile",
+  "extensions": ["dbaeumer.vscode-eslint"],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install"
+}
+
