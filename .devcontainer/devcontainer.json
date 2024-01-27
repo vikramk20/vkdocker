@@ -1,11 +1,8 @@
-# Dockerfile
-FROM node:14
-
-WORKDIR /usr/src/app
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["node", "app.js"]
+{
+  "name": "My Project",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install",
+  "extensions": ["dbaeumer.vscode-eslint"]
+}
 
